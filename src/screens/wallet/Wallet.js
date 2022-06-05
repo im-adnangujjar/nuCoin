@@ -1,14 +1,12 @@
 import { StyleSheet, Text, View, Image, ScrollView, SafeAreaView, } from 'react-native'
 import React from 'react'
 import { styles } from './walletStyle'
-import logo from '../../assets/images/walletlogo.png'
-import image from '../../assets/images/person.png'
-import icon1 from '../../assets/icons/Icon.png'
 import WalletButton from '../../compnent/walletButoon /WalletButton'
 import { data } from '../../constant/constant'
 import copy from '../../assets/icons/copy_icon.png'
 import Button from '../../compnent/button/Button'
 import LinearGradient from 'react-native-linear-gradient';
+import Header from '../../compnent/header/Header'
 
 
 export default function Wallet({ navigation }) {
@@ -18,13 +16,7 @@ export default function Wallet({ navigation }) {
       <SafeAreaView />
 
       <View style={styles.subContainer}>
-        <View style={styles.bar}>
-          <Image source={logo} />
-          <View style={styles.image}>
-            <Image style={styles.image_margin} source={icon1} />
-            <Image source={image} />
-          </View>
-        </View>
+        <Header/>
         <Text style={styles.title}>Create Wallet</Text>
         <LinearGradient start={{ x: 0, y: -1 }} end={{ x: 1, y: 1 }} colors={['#ECB8B8', '#FFFFFF']} style={styles.linearGradient}>
           <View  style={styles.bgColor}><Text style={styles.descripation}>PLease copy down the mnemonic for you new account below. If you loose these mnemonics, you will risk loosing your coins (wealth). You will have to confirm the mnemonic on the text sceen</Text></View>

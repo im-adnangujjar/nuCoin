@@ -9,6 +9,7 @@ import Wallet from '../screens/wallet/Wallet';
 import Wallet3 from '../screens/wallet/Wallet3';
 import LastWallet from '../screens/wallet/LastWallet.js';
 import DashBoard from '../screens/dashboard/DashBoard';
+import CardA from '../compnent/card/CardA';
 
 
 
@@ -23,7 +24,7 @@ function Navigation() {
                     headerShown: false
                 }}
             >
-                {/* <Stack.Screen name="DashBoard" component={DashBoard} /> */}
+                {/* <Stack.Screen name="CardA" component={CardA} /> */}
 
                 <Stack.Screen name="SplashScreen" component={Home} />
                 <Stack.Screen name="RaceDetail" component={LogIn} />
@@ -32,13 +33,7 @@ function Navigation() {
                 <Stack.Screen name="Wallet" component={Wallet} />
                 <Stack.Screen name="Wallet3" component={Wallet3} />
                 <Stack.Screen name="LastWallet" component={LastWallet} />
-
-
-
-
-
-
-
+                <Stack.Screen name="DashBoard" component={DashBoard} /> 
 
             </Stack.Navigator>
         </NavigationContainer>
