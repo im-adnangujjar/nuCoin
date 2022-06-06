@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View, SafeAreaView, Image, ScrollView, TextInput } from 'react-native'
 import React from 'react'
-import { style } from './SaplashScreenStyle'
+import { style } from './SplashScreenStyle'
 import logo from '../../assets/images/logo.png'
 import bgLogo from '../../assets/images/backgroundLogo.png'
 import Button from '../../compnent/button/Button'
 
-const Home = ({navigation}) => {
+const SplashScreen = ({navigation}) => {
     return (
         <ScrollView style={style.container}>
             <SafeAreaView />
@@ -33,5 +33,5 @@ const Home = ({navigation}) => {
         </ScrollView>
     )
 }
-export default Home
+export default SplashScreen
 

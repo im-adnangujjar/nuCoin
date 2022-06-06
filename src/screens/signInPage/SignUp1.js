@@ -10,15 +10,14 @@ const SignUp1 = ({navigation}) => {
       <View>
         <Text style={styles.title}>Sign up</Text>
         <Text style={styles.title}>to continue</Text>
-        <Text style={styles.lable}>User Name</Text>
+        <Text style={styles.lable}>Phone Number</Text>
         <TextInput style={styles.input} placeholder="" />
-        <Text style={styles.lable}>First Name</Text>
+        <Text style={styles.lable}>Email</Text>
         <TextInput style={styles.input} placeholder="" />
-        <Text style={styles.lable}>Last Name</Text>
+        <Text style={styles.lable}>Password</Text>
         <TextInput style={styles.input} placeholder="" />
-        <Text style={styles.lable}>Birthdate</Text>
+        <Text style={styles.lable}>Confirm Password</Text>
         <TextInput style={styles.input} placeholder="" />
-        <Text style={styles.lable}>Select Gender</Text>
         <View style={styles.buttons}>
           <Button text='Back' width={138} />
           <Button click={() => navigation.navigate('Wallet')} text='Sign Up' width={138} />

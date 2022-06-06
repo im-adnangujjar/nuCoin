@@ -5,7 +5,7 @@ import Header from '../../compnent/header/Header'
 import sun from '../../assets/icons/sunIcon.png'
 import wallet from '../../assets/icons/wallet.png'
 import more from '../../assets/icons/more.png'
-import {data1} from '../../constant/constant'
+import { data1 } from '../../constant/constant'
 import Card from '../../compnent/card/Card'
 import GradientButton from '../../compnent/button/GradientButton'
 import CardA from '../../compnent/card/CardA'
@@ -36,11 +36,11 @@ const DashBoard = () => {
           <Card />
         </View>
         <View style={styles.button}>
-        {
-          data1.map((item, index) => {
-  return <GradientButton key={index} item={item}/>
-          })
-        }
+          {
+            data1.map((item, index) => {
+              return <GradientButton key={index} item={item} />
+            })
+          }
         </View>
         <View style={styles.image_flex}><Text style={styles.list}>Recent Transactions</Text>
           <View style={styles.flex}>
@@ -48,8 +48,10 @@ const DashBoard = () => {
             <Image source={more} />
           </View>
         </View>
-        <CardA/>
-        <CardA/>
+        <View style={styles.card_margin}>
+          <CardA />
+        </View>
+        <CardA />
 
       </View>
     </ScrollView>

@@ -62,6 +62,10 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         marginTop: 33
+    },
+    card_margin:{
+        marginTop:20,
+        marginBottom:12,
     }
 
 })
